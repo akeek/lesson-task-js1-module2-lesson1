@@ -51,14 +51,13 @@ let count = 0;
 
 function counter(){
     count++;
-    if(count === 1000000) {
+    if(count === 4) {
         clearInterval(count1)
     }
-    textDiv.innerHTML += `${count}
-     `
+    console.log(count)
 }
 
 
-const count1 = setInterval(counter, 20);
+const count1 = setInterval(counter, 1000);
 
 
