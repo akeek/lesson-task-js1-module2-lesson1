@@ -59,6 +59,6 @@ function counter(){
 }
 
 
-const count1 = setInterval(counter, 100);
+const count1 = setInterval(counter, 1);
 
 
