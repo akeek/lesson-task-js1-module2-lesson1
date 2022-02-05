@@ -43,15 +43,22 @@ setTimeout(someFunction, waitTime);
 
 //Q4
 
+const textDiv = document.querySelector(".text")
+
 let count = 0;
+
+
 
 function counter(){
     count++;
-
-    if(count === 4) {
+    if(count === 1000000) {
         clearInterval(count1)
     }
-    console.log(count)
+    textDiv.innerHTML += `${count}
+     `
 }
 
-const count1 = setInterval(counter, 1500);
+
+const count1 = setInterval(counter, 100);
+
+
